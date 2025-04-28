@@ -1,0 +1,10 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const res = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+const data = await res.json();
+console.log(data)
+---
+
+<BaseLayout title="About">
+    <h1>About</h1>
+</BaseLayout>
